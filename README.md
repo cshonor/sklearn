@@ -61,8 +61,9 @@ sklearn/
 ├── README.md
 ├── environment.yml    # Conda 环境配置（Anaconda 推荐）
 ├── requirements.txt
-├── notebooks/         # Jupyter 笔记与示例
-└── scripts/           # 独立脚本示例
+├── 决策树/            # 决策树示例（动物分类等）
+├── notebooks/        # Jupyter 笔记与示例
+└── scripts/          # 独立脚本示例
 ```
 
 ## 许可证
