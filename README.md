@@ -11,9 +11,22 @@
 ## 环境要求
 
 - Python 3.8+
-- 推荐使用虚拟环境
+- 推荐使用 **Anaconda** 或 Miniconda 管理环境
 
-### 安装依赖
+### 使用 Anaconda（推荐）
+
+创建并激活 conda 环境：
+
+```bash
+conda env create -f environment.yml
+conda activate sklearn
+```
+
+之后在该环境中运行项目即可。
+
+### 使用 pip
+
+若未使用 conda，可用 pip 安装依赖：
 
 ```bash
 pip install numpy scipy matplotlib scikit-learn
@@ -46,8 +59,9 @@ pip install -r requirements.txt
 ```
 sklearn/
 ├── README.md
+├── environment.yml    # Conda 环境配置（Anaconda 推荐）
 ├── requirements.txt
-├── notebooks/          # Jupyter 笔记与示例
+├── notebooks/         # Jupyter 笔记与示例
 └── scripts/           # 独立脚本示例
 ```
 
