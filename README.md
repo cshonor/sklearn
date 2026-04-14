@@ -1,71 +1,79 @@
-# sklearn 入门与实践
+# Hands-On Machine Learning (2nd ed.) — Notes & Code
 
-基于 **scikit-learn**（sklearn）的机器学习学习与示例项目。
+## English
 
-## 关于 sklearn
+This repository contains my learning notes and code implementations for the book **Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (2nd Edition)**.
 
-[scikit-learn](https://scikit-learn.org/stable/) 是基于 Python 的开源机器学习工具库，基于 **NumPy**、**SciPy** 和 **Matplotlib** 等数值计算库实现高效算法，覆盖了主流机器学习算法。
+## 中文
 
-在工程应用中，从零实现算法往往耗时且难以保证稳定，更常见的做法是：分析数据、根据数据特点选择算法、调用工具库中的实现、调参并获取所需信息，在效率与效果之间取得平衡。本项目用于学习和练习 sklearn 的用法。
+本仓库包含《Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow（第二版）》的学习笔记与代码实现。
 
-## 环境要求
+## What’s inside
+
+- **01-machine-learning-basics/**: Traditional ML with Scikit-Learn (Ch1–9)
+- **02-neural-networks-deep-learning/**: Deep Learning with TF/Keras (Ch10–19)
+- Each chapter folder contains:
+  - **notes/**: notes (can be multiple `.md`)
+  - **code/**: runnable code examples
+  - **images/**: chapter-specific images/plots
+- **datasets/**: shared datasets (optional)
+- **assets/**: shared images/plots (optional)
+
+## Environment
 
 - Python 3.8+
-- 推荐使用 **Anaconda** 或 Miniconda 管理环境
+- Recommended: **Anaconda** / Miniconda
 
-### 使用 Anaconda（推荐）
+### Anaconda (recommended)
 
-创建并激活 conda 环境：
+Create and activate the conda environment:
 
 ```bash
 conda env create -f environment.yml
 conda activate sklearn
 ```
 
-之后在该环境中运行项目即可。
+Then run code inside this environment.
 
-### 使用 pip
+### pip
 
-若未使用 conda，可用 pip 安装依赖：
+If you don't use conda:
 
 ```bash
 pip install numpy scipy matplotlib scikit-learn
 ```
 
-或使用 `requirements.txt`：
+Or use `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 官方文档
+## References
 
-- 英文文档：<http://scikit-learn.org/stable/index.html>
-- 文档中包含各算法的说明与简单示例，建议配合查阅。
+- scikit-learn docs: `http://scikit-learn.org/stable/index.html`
 
-## 学习内容（参考）
-
-本仓库侧重 **sklearn 的使用**，不深入算法原理，包括：
-
-- 各算法在 sklearn 中的调用方式
-- 可调参数与常用接口
-- 参数与接口对算法行为和精度的影响
-- 从简单到复杂的示例应用
-
-若需系统学习算法原理，可参考教材《数据挖掘导论》（Introduction to Data Mining，Pang-Ning Tan 等，机械工业出版社）。
-
-## 项目结构（建议）
+## Repository structure
 
 ```
 sklearn/
 ├── README.md
-├── environment.yml    # Conda 环境配置（Anaconda 推荐）
+├── environment.yml
 ├── requirements.txt
-├── 决策树/            # 决策树示例（动物分类等）
-├── notebooks/        # Jupyter 笔记与示例
-└── scripts/          # 独立脚本示例
+├── 01-machine-learning-basics/
+│   ├── ch01-machine-learning-overview/
+│   ├── ...
+│   └── ch09-unsupervised-learning/
+├── 02-neural-networks-deep-learning/
+│   ├── ch10-keras-ann-intro/
+│   ├── ...
+│   └── ch19-large-scale-training-deployment/
+├── datasets/  # optional
+└── assets/    # optional
 ```
 
-## 许可证
+## Run an example
 
-仅供学习使用。
+```bash
+python 01-machine-learning-basics/ch06-decision-trees/code/decision_tree_animals.py
+```
